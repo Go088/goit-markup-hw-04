@@ -327,7 +327,7 @@ fill: #F4F4FD;
     height: 40px;
     border-radius: 50%;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     background-color: #4D5AE5;
 }
 .footer-icon {
