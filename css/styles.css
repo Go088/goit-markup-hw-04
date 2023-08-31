@@ -92,10 +92,11 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
     background-image:
-    linear-gradient(rgba(46, 47, 66, 0.70) , rgba(46, 47, 66, 0.70)), 
-    url("/images/hero-background.png");
+    linear-gradient(rgba(46, 47, 66, 0.70) , rgba(46, 47, 66, 0.70)), url(../images/hero-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    max-width: 1440px;
 }
 
 .hero-title {color: #FFF;
@@ -329,7 +330,7 @@ fill: #F4F4FD;
     height: 40px;
     border-radius: 50%;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     background-color: #4D5AE5;
 }
 .footer-icon {
