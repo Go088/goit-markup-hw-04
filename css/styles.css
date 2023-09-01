@@ -59,20 +59,10 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;} .studio-logo {color: #2E2F42;}
 
-.navigation-link {
-    padding: 24px 0;
-    color: #2E2F42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.current {
+    color: #404BBF;
 }
-    .navigation-link:focus, .navigation-link:hover {color: #404BBF;}
-    .navigation-link:focus::after, .navigation-link:hover::after
-
-.navigation-link::after {
+.current::after {
     content: '';
     display: block;
     width: 100%;
@@ -84,6 +74,20 @@ img {
     left: 0;
     bottom: -1px;
 }
+
+.navigation-link {
+    padding: 24px 0;
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-link:focus, .navigation-link:hover {color: #404BBF;}
+
+.navigation-link:focus::after, .navigation-link:hover::after
  
 .address {
     font-style: normal;
@@ -112,7 +116,6 @@ img {
     padding-bottom: 188px;
     background-image:
     linear-gradient(rgba(46, 47, 66, 0.70) , rgba(46, 47, 66, 0.70)), url(../images/hero-background.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     max-width: 1440px;
@@ -183,16 +186,15 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 112px;
+    margin-bottom: 8px;
     padding-top: 24px;
     padding-bottom: 24px;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     background: #F4F4FD;
-
 }
-.features-icon {
-
-}
+.features-icon
 
 .features-title {
     color: #2E2F42;
@@ -239,6 +241,9 @@ img {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .name {
     text-align: center;
@@ -254,16 +259,28 @@ img {
 .social-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 .social-list-item {
     display: flex;
     width: 40px;
     height: 40px;
+}
+.social-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-link:hover, .social-link:focus {
+    background-color: #404BBF;
+}
+
+
 .social-icon {
 fill: #F4F4FD;
 }
