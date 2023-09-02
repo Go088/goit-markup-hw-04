@@ -60,6 +60,7 @@ img {
     text-transform: uppercase;} .studio-logo {color: #2E2F42;}
 
 .navigation-link {
+    display: block;
     position: relative;
     padding: 24px 0;
     color: #2E2F42;
@@ -83,24 +84,23 @@ img {
     margin-top: 20px;
     position: absolute;
     left: 0;
-    bottom: -1px;
 }
 .navigation-link:focus, .navigation-link:hover {color: #404BBF;}
 
 .navigation-link:focus::after, .navigation-link:hover::after
  
 .address {
-    font-style: normal;
-    font-weight: 400;}
-
+    display: block
+    }
 .address-menu {
     display: flex;
     gap: 40px;
 }
  
 .address-link {
+    font-style: normal;
+    font-weight: 400;
     padding: 24px 0;
-    align-items: center;
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
@@ -119,6 +119,7 @@ img {
     background-size: cover;
     background-position: center;
     max-width: 1440px;
+    margin: 0 auto;
     background-repeat: no-repeat;
 }
 
@@ -149,6 +150,7 @@ img {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover, .hero-button:focus {background-color: #404BBF;}
@@ -177,16 +179,12 @@ img {
     padding: 0;}
 
 .features-item {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 8px;
     width: calc((100% - 3 * 24px) / 4);
 }
 .features-icon-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 112px;
     margin-bottom: 8px;
     padding-top: 24px;
@@ -195,7 +193,6 @@ img {
     border: 1px solid #8E8F99;
     background: #F4F4FD;
 }
-.features-icon
 
 .features-title {
     color: #2E2F42;
@@ -239,10 +236,6 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -257,6 +250,7 @@ img {
     letter-spacing: 0.02em;}
 .text-card {
     text-align: center;
+    margin-bottom: 8px;
 }
 .social-list {
     display: flex;
@@ -338,7 +332,7 @@ fill: #F4F4FD;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-item-wrapper:hover .overlay {
+.portfolio-item:hover .overlay {
     transform: translateY(0%);
 }
 
